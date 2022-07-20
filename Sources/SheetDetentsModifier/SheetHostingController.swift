@@ -5,7 +5,7 @@ import SwiftUI
 public final class SheetHostingController<Content: View>: UIHostingController<Content> {
     var detents: [UISheetPresentationController.Detent] = []
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let controller = sheetPresentationController {
             controller.detents = detents
