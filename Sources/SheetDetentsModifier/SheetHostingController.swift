@@ -9,7 +9,6 @@ public final class SheetHostingController<Content: View>: UIHostingController<Co
         super.viewWillAppear(animated)
         if let controller = sheetPresentationController {
             controller.detents = detents
-            controller.prefersGrabberVisible = true
         }
     }
 }
